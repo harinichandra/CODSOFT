@@ -2,58 +2,74 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: url('images/background.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
 }
 
 header {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    background-color: #333;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1em 0;
 }
 
-header h1 {
+header .logo h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 0.5em;
 }
 
 section {
-    padding: 2rem;
+    padding: 2em;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    margin: 1rem 0;
 }
 
-#hero {
-    background: url('https://t4.ftcdn.net/jpg/04/76/57/27/360_F_476572792_zMwqHpmGal1fzh0tDJ3onkLo88IjgNbL.jpg') no-repeat center center/cover;
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #f4f4f4;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+#resume a {
+    text-decoration: none;
     color: white;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
-    background-attachment: fixed;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+#contact p {
+    margin: 0.5em 0;
 }
 
 footer {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
